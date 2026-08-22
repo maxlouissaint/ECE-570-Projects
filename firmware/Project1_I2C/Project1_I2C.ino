@@ -6,10 +6,11 @@ Date: 8/27/2023
 */
 #include<Wire.h>  // library for facilitating I2C communication between 2 devices
 #include <WiFi.h> // WiFi library for ESP32
+#include "secrets.h" // wifi password macro
 
 // The ssid and password of the WIFI network the ESP32 connects to.
-const char* ssid = "MOTO7DD2";
-const char* password = "u44aa7k5nx";
+const char* ssid = WIFI_SSID;
+const char* password = WIFI_PASSWORD;
 
 /*
   Configures the UDP communication by specifying the 
