@@ -86,6 +86,7 @@ void loop(){
   float roll  = atan2(yAcc, zAcc) * 180.0/M_PI;
   float pitch = atan2(-xAcc, sqrt(zAcc * zAcc + yAcc * yAcc)) * 180.0/M_PI;
  
+  // Serial.print(xA); Serial.print(",");
   // Serial.print(xAcc); Serial.print(",");
   // Serial.print(yAcc); Serial.print(",");
   // Serial.print(zAcc); Serial.print(",");

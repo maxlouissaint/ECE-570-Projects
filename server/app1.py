@@ -78,9 +78,9 @@ while True:
            if np.abs(pitch) > np.abs(roll):
                # Apply pitch rotation around the X-axis
                if (pitch > 0):
-                   glRotatef(1, 0, 1, 0)
+                   glRotatef(1, 1,0 , 0)
                elif (pitch < 0):
-                   glRotatef(-1, 0, 1, 0)
+                   glRotatef(-1, 1, 0, 0)
                # Apply roll rotation around the z-axis  
            else:
                if (roll > 0):
